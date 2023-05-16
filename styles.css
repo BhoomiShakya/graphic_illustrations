@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  
+  h1 {
+    color: rgb(204, 0, 0);
+    font-size: 3rem;
+    animation: fadeins 3s;
+    margin-bottom: 1rem;
+    margin-top: 1.7rem;
+  }
+  
+  .grid-container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    animation: fadeins 3s;
+  }
+  @keyframes fadeins{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+  .grid-container div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+  }
+  .grid-container div:hover img {
+    filter: grayscale(0);
+  }
+  .grid-container div:hover {
+    border-color: rgb(204, 0, 0)    ;
+  }
+  .grid-container div img {
+    width: 100%;
+    filter: grayscale(100%);
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+  }
+  .grid-container div p {
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+  }
